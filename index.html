@@ -4,7 +4,13 @@
 <button onclick="document.querySelector('#time').value += ':'">：</button>
 <button onclick="document.querySelector('#time').value += '/'">／</button>
 <button onclick="document.querySelector('#time').value += ' '">SP</button><br/>
-<button onclick="document.querySelector('#time').value = '2019-07-03 18:00:00'">2019-07-03 18:00:00</button>
+<button onclick="document.querySelector('#time').value = '2019-07-03 18:00:00'">2019-07-03 18:00:00</button><br/>
+<button onclick="document.querySelector('#time').value = '2019/07/03 18:00:00'">2019/07/03 18:00:00</button><br/>
+<button onclick="document.querySelector('#time').value = '2019/07/03 18:00:00.000+900'">2019/07/03 18:00:00.000+900</button><br/>
+<button onclick="document.querySelector('#time').value = '2019/07/03 18:00:00.000 +900'">2019/07/03 18:00:00.000 +900</button><br/>
+<button onclick="document.querySelector('#time').value = '2019/07/03 18:00:00 +900'">2019/07/03 18:00:00 +900</button><br/>
+<button onclick="document.querySelector('#time').value = '2019/07/03 18:00:00+900'">2019/07/03 18:00:00+900</button><br/>
+<button onclick="document.querySelector('#res').innerText = new Date()">submit cur</button>
 <button onclick="document.querySelector('#res').innerText = new Date(document.querySelector('#time').value)">submit</button>
 <h1 id="res"></h1>
 </body>
