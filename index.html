@@ -1,17 +1,16 @@
-<html>
-<body>
-<input id="time"></input>
-<button onclick="document.querySelector('#time').value += ':'">：</button>
-<button onclick="document.querySelector('#time').value += '/'">／</button>
-<button onclick="document.querySelector('#time').value += ' '">SP</button><br/>
-<button onclick="document.querySelector('#time').value = '2019-07-03 18:00:00'">2019-07-03 18:00:00</button><br/>
-<button onclick="document.querySelector('#time').value = '2019/07/03 18:00:00'">2019/07/03 18:00:00</button><br/>
-<button onclick="document.querySelector('#time').value = '2019/07/03 18:00:00.000+900'">2019/07/03 18:00:00.000+900</button><br/>
-<button onclick="document.querySelector('#time').value = '2019/07/03 18:00:00.000 +900'">2019/07/03 18:00:00.000 +900</button><br/>
-<button onclick="document.querySelector('#time').value = '2019/07/03 18:00:00 +900'">2019/07/03 18:00:00 +900</button><br/>
-<button onclick="document.querySelector('#time').value = '2019/07/03 18:00:00+900'">2019/07/03 18:00:00+900</button><br/>
-<button onclick="document.querySelector('#res').innerText = new Date()">submit cur</button>
-<button onclick="document.querySelector('#res').innerText = new Date(document.querySelector('#time').value)">submit</button>
-<h1 id="res"></h1>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <pre id="console"></pre>
+    <h1>OK:</h1><div id="ok"></div>
+    <h1>NG:</h1><div id="ng"></div>
+    <h1>Invalid Date:</h1><div id="id"></div>
+    <script src="test.js"></script>
+  </body>
 </html>
