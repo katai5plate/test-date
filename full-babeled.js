@@ -20,13 +20,25 @@
       month: 7,
       day: 1
     };
-    return ['07', '7'].reduce(function (p, m) {
+    return ['07', '7', 'february', 'feb', 'February', 'Feb', 'FEBRUARY', 'FEB'].reduce(function (p, m) {
       return [].concat(p, ['-', '/', ' ', ',', ', '].reduce(function (pp, d) {
         return [].concat(pp, [{
           s: "2019" + d + m + d + "02",
           ...d72
         }, {
           s: "2019" + d + m + d + "2",
+          ...d72
+        }, {
+          s: "2019" + d + m,
+          ...d7
+        }, {
+          s: "2019" + d + m,
+          ...d7
+        }, {
+          s: "02" + d + m + d + "2019",
+          ...d72
+        }, {
+          s: "2" + d + m + d + "2019",
           ...d72
         }]);
       }, []));
