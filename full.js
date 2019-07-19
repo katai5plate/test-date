@@ -8,12 +8,12 @@
         return [
             '07',
             '7',
-            // 'february',
-            // 'feb',
-            // 'February',
-            // 'Feb',
-            // 'FEBRUARY',
-            // 'FEB',
+            'february',
+            'feb',
+            'February',
+            'Feb',
+            'FEBRUARY',
+            'FEB',
         ].reduce(
             (p, m) => [
                 ...p,
@@ -39,12 +39,12 @@
     const times = [
         { s: '01:02:03', hour: 1, minute: 2, second: 3, ms: 0 },
         { s: '01:02:03.456', hour: 1, minute: 2, second: 3, ms: 456 },
-        // { s: '01:02:03.056', hour: 1, minute: 2, second: 3, ms: 56 },
-        // { s: '01:02:03.006', hour: 1, minute: 2, second: 3, ms: 6 },
+        { s: '01:02:03.056', hour: 1, minute: 2, second: 3, ms: 56 },
+        { s: '01:02:03.006', hour: 1, minute: 2, second: 3, ms: 6 },
         { s: '1:2:3', hour: 1, minute: 2, second: 3, ms: 0 },
         { s: '1:2:3.456', hour: 1, minute: 2, second: 3, ms: 456 },
-        // { s: '1:2:3.56', hour: 1, minute: 2, second: 3, ms: 56 },
-        // { s: '1:2:3.6', hour: 1, minute: 2, second: 3, ms: 6 },
+        { s: '1:2:3.56', hour: 1, minute: 2, second: 3, ms: 56 },
+        { s: '1:2:3.6', hour: 1, minute: 2, second: 3, ms: 6 },
     ].reduce(
         (p, c) => [
             ...p,
