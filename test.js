@@ -132,10 +132,10 @@
             document.getElementById('id').innerHTML += dom;
         }else{
             if (json.ex === json.res) {
-                result.ok = [...result.invalid, s];
+                result.ok = [...result.ok, s];
                 document.getElementById('ok').innerHTML += domOK;
             } else {
-                result.ng = [...result.invalid, s];
+                result.ng = [...result.ng, s];
                 document.getElementById('ng').innerHTML += dom;
             }
         }
