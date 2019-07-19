@@ -20,7 +20,7 @@
       month: 7,
       day: 1
     };
-    return ['07', '7', 'february', 'feb', 'February', 'Feb', 'FEBRUARY', 'FEB'].reduce(function (p, m) {
+    return ['07', '7', 'july', 'jul', 'July', 'Jul', 'JULY', 'JUL'].reduce(function (p, m) {
       return [].concat(p, ['-', '/', ' ', ',', ', '].reduce(function (pp, d) {
         return [].concat(pp, [{
           s: "2019" + d + m + d + "02",
