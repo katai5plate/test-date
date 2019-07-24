@@ -9,16 +9,20 @@
   <body>
     <h1 id="date1"></h1>
     <h1 id="moment1"></h1>
+    <h1 id="moment1b"></h1>
     <h1 id="date2"></h1>
     <h1 id="moment2"></h1>
+    <h1 id="moment2b"></h1>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>
     <script>
         const x = "2019, 7, 2 1:2:3.456";
         document.querySelector("#date1").innerText = new Date(x);
         document.querySelector("#moment1").innerText = moment(x).format("YYYY/MM/DD HH:mm:ss");
+        document.querySelector("#moment1b").innerText = moment(x, "YYYY, M, D H:m:s").format("YYYY/MM/DD HH:mm:ss");
         const y = "2019-7-2 1:2:3";
         document.querySelector("#date2").innerText = new Date(x);
         document.querySelector("#moment2").innerText = moment(x).format("YYYY/MM/DD HH:mm:ss");
+        document.querySelector("#moment2b").innerText = moment(x, "YYYY-M-D H:m:s").format("YYYY/MM/DD HH:mm:ss");
     </script>
   </body>
 </html>
