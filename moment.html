@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="date"></h1>
+    <h1 id="moment"></h1>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>
+    <script>
+        const x = "2019, 7, 2 1:2:3.456";
+        document.querySelector("#date").innerText = new Date(x);
+        document.querySelector("#moment").innerText = moment(x).format("YYYY/MM/DD HH:mm:ss");
+    </script>
+  </body>
+</html>
